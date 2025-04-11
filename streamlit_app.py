@@ -33,9 +33,9 @@ def download_model_if_needed(file_id, filename):
         gdown.download(url, filename, quiet=False)
 
 # Download and load models
-download_model_if_needed("https://drive.google.com/file/d/1MOpRLQcbqXqpE50vnDbnWh2vF7rVrPd9/view?usp=sharing", "mlp_sentiment_model_goa.keras")
-download_model_if_needed("https://drive.google.com/file/d/1J7xVS8pRKjbMpbZqwEnNfBzEIn5c8Mh_/view?usp=sharing", "mlp_sentiment_model_manipur.keras")
-download_model_if_needed("https://drive.google.com/file/d/1ZkVjrtnsZL7XujaLl4SWk5tvvMQumce9/view?usp=sharing", "mlp_sentiment_model.keras")
+download_model_if_needed("1MOpRLQcbqXqpE50vnDbnWh2vF7rVrPd9", "mlp_sentiment_model_goa.keras")
+download_model_if_needed("1J7xVS8pRKjbMpbZqwEnNfBzEIn5c8Mh_", "mlp_sentiment_model_manipur.keras")
+download_model_if_needed("1ZkVjrtnsZL7XujaLl4SWk5tvvMQumce9", "mlp_sentiment_model.keras")
 
 mlp_model_goa = load_model("mlp_sentiment_model_goa.keras")
 mlp_model_manipur = load_model("mlp_sentiment_model_manipur.keras")
