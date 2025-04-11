@@ -8,10 +8,10 @@ import pandas as pd
 import numpy as np
 import os
 
-# Download SpaCy model
-import spacy.cli
-spacy.cli.download("en_core_web_sm")
-nlp = spacy.load('en_core_web_sm')
+
+# Load the model directly (no downloading required)
+nlp = spacy.load("en_core_web_sm")
+
 
 # Load datasets
 data_goa = pd.read_csv('Processed_with_MLP_Sentiment_Goa.csv')
